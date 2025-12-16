@@ -8,20 +8,114 @@
 </head>
 
 <body>
-    <form>
+    <!-- FORM EXAMPLE 1-->
+
+    <!-- <form>
         <label>Name:</label>
-        <input type="text">
+        <input type="text" name="username">
         <br><br>
         <label>Age:</label>
-        <input type="number">
+        <input type="number" name="userage">
         <br><br>
         <label>Password:</label>
-        <input type="password">
+        <input type="password" name="userpassword">
         <br><br>
         <input type="submit">
+    </form> -->
+
+    <!-- Form Example 2 -->
+
+    <h1>University Registration Form</h1>
+    <h3>Please Fill out the form to register</h3>
+    <hr>
+    <h2>Personal Details</h2>
+    <form>
+
+        <label for="first name">First Name :</label>
+        <input type="text" placeholder="e.g Rishabh" name="first name" id="first name">
+        <br><br>
+        <label for="last name">Last Name :</label>
+        <input type="text" placeholder="e.g Verma" name="last name" id="last name">
+        <br><br>
+        <label for="date of birth">Date of Birth:</label>
+        <input type="date" name="date of birth" id="date of birth">
+        <br><br>
 
 
+        <!-- Genders -->
+        <label>Gender</label>
+        <br>
+        <label for="males">Males</label>
+        <input type="radio" id="males" name="genders">
+        <br>
+        <label for="females">Females</label>
+        <input type="radio" id="females" name="genders">
+        <br>
+        <label for="others">Others</label>
+        <input type="radio" id="others" name="genders">
+        <br><br>
+        <p>Upload Your photos:</p>
+        <input type="file" name="file">
+        <hr>
+        <h2>Contact Information</h2>
+        <label for="email address">Email Address :</label>
+        <input type="email" id="email address" name="email address" placeholder="rishabh@gmail.com">
+        <br><br>
+        <label for="phone number">Phone Number :</label>
+        <input type="number" id="phone number" name="phone number" placeholder="9131185969">
+        <br><br>
+        <label for="mailing address">Mailing Address</label> <br>
+        <textarea name="mailing address" id="mailing address" rows="7" cols="40"
+            placeholder="Write your address here"></textarea>
+        <hr>
+        <h2>Academic Information</h2>
+
+        <!-- Acaddemic Information -->
+        <label for="course">Select You Course :</label><br>
+        <select name="Courses selected" id="course">
+            <option value="">CSE</option>
+            <option value="">ME</option>
+            <option value="">EEE</option>
+        </select>
+
+        <p>Extracurricural Interests</p>
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="sports" name="Extracurricural Interests"><br>
+
+        <label for="Music arts">Music arts</label>
+        <input type="checkbox" name="Extracurricural Interests" id="Music arts"><br>
+
+        <label for="Technology Clubs">Technology Clubs</label>
+        <input type="checkbox" name="Extracurricural Interests" id="Technology Clubs"><br>
+
+        <label for="Voluntering">Voluntering</label>
+        <input type="checkbox" name="Extracurricural Interests" id="Voluntering">
+        <hr>
+        <!-- Account Section -->
+        <h2>Create Your Account </h2>
+        <label for="create a password">Create a password :</label>
+        <input type="text" id="create a password" name="Account"><br><br>
+
+        <label for="security question">Security Question</label>
+        <select name="Account" id="security question">
+            <option value="">What is your first pet name ?</option>
+            <option value="">What is your dog name ?</option>
+
+            <option value="">What is your cat name ?</option>
+            <option value="">What is your Hen name ?</option>
+        </select><br><br>
+
+        <label for="security answer">Security Answer :</label>
+        <input type="text" name="Account" id="security answer"><br><br>
+
+        <input type="checkbox" id="">
+        <label for="i agree and continue">I agree and continue to terms and conditions</label><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear Form</button>
     </form>
+
+
 </body>
 
 </html>
